@@ -3,6 +3,39 @@ body{
 }
 
 .main-content{
+    position:static;
     display: flex;
     flex-direction: row;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    height: 100vh;
+    width: 50vw;
+}
+
+.left-content{
+    background-color: aqua;
+    height: 100vh;
+    width: 50vw;
+}
+
+.main-message{
+    background-color: aliceblue;
+    width: 100%;
+    height: 30vh;
+}
+
+.form-content{
+    background-color: coral;
+    width: 100%;
+    height: 40vh;
+}
+
+.submit-content{
+    background-color: hotpink;
+    width: 100%;
+    height: 30vh;
 }
