@@ -9,30 +9,73 @@
 </head>
 <body>
     <div class="main-content">
+        <!-- The section of the page containing the ODIN caption with the logo -->
         <div class="left-content">
             <div class="h1-content">
                 <div class="h1-content-text"><img src="img/odin-lined.png" alt="odin-logo" class="logo"> Odin</div>
             </div>
             <div class="credits-content">
-                <h1>Image provided by <a href="https://unsplash.com/@amuro_akira">Akira</a> in <a href="https://unsplash.com/">Unsplash</a></h1>
+                <h1 class="credits">Image provided by <a href="https://unsplash.com/@amuro_akira">Akira</a> in <a href="https://unsplash.com/">Unsplash</a></h1>
             </div>
         </div>
 
         <div class="right-content">
+
+            <!-- Welcome message -->
             <div class="main-message">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize youre deepest dreams. <br>Sign up <i>now</i> to get started.
+                <h1 class="caption-font">Welcome! Sign up now to get started
                 
-                    <br><br>You <i>know</i> you want to.
+                    <br>You know you want to.
                 </h1>
             </div>
+
+            <!-- Form Content -->
             <div class="form-content">
-                <h1>Let's do this!</h1>
-                <form action="#">
-                    
-                </form>
+                <!-- <h1 class="caption-font">Let's do this!</h1> -->
+                <form action="#" >
+                    <fieldset class="user-form">
+                        <legend>Let's do this!</legend>
+                        <!-- First line of the forms: user first name and last name -->
+                        <div class="user-info-container">
+                            <div class="first-name">
+                                <label class="label-caption" for="first-name">First Name<em>*</em></label><br>
+                                <input type="text" name="first-name" id="first-name" minlength="2" placeholder="John" required title="First name should at least be 2 letters or more">
+                            </div>
+                            <div class="last-name">
+                                <label class="label-caption" for="last-name">Last Name<em>*</em></label><br>
+                                <input type="text" name="last-name" id="last-name" minlength="2" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <!-- Second line of the forms: user email and phone number -->
+                        <div class="user-contact-container">
+                            <div class="user-contact-email">
+                                <label class="label-caption" for="user-email">Email<em>*</em></label><br>
+                                <input type="email" name="user-email" id="user-email" placeholder="John.Doe@gmail.com" required>
+                            </div>
+                            <div class="user-contact-phone">
+                                <label class="label-caption" for="user-phone-number">Phone Number<em>*</em></label><br>
+                                <input type="text" name="user-phone-number" id="user-phone-number" placeholder="09xxxxxxxxx" required minlength="11" maxlength="11">
+                            </div>
+                        </div>
+                        <!-- Third line of the forms: user password -->
+                        <div class="user-password-container">
+                            <div class="user-password">
+                                <label class="label-caption" for="password">Password<em>*</em></label><br>
+                                <input type="password" name="password" id="user-password" placeholder="Password" required>
+                            </div>
+                            <div class="user-confirm-password">
+                                <label class="label-caption" for="password-confirm">Confirm Password<em>*</em></label><br>
+                                <input type="password" name="password-confirm" id="user-password-confirm" placeholder="Confirm Password" required>
+                            </div>
+                        </div>
+                    </fieldset>
             </div>
             <div class="submit-content">
-                <h1>This is where the submit button would be</h1>
+                <div class="submit-container">
+                    <button type="submit">Create Account</button>
+                    <h1 class="credits">Already have an account? <a href="#">Log in</a></h1>
+                </div>
+                </form>
             </div>
         </div>
     </div>

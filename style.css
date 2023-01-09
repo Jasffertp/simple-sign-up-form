@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto:wght@400;500&family=Source+Sans+Pro&family=Teko:wght@500&display=swap');
+
 body{
     margin: 0;
 }
@@ -11,37 +13,54 @@ body{
 .right-content{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    position: static;
+    background-color: #fdd746;
     height: 100vh;
     width: 100%;
+    /* padding-left: 5rem; */
 }
 
 .left-content{
     /* background-color: aqua; */
-    background-image: url("img/side-photo.jpg");
+    background-image: url("img/yellow.jpg");
     background-size: cover;
     height: 100vh;
     width: 40vw;
-    position: relative;
+    position:relative;
     display: flex;
 }
 
-.main-message{
-    background-color: aqua;
+.main-message, .submit-content{
+    /* background-color: aqua; */
     width: 100%;
     height: 30vh;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    padding-right: 5rem;
 }
 
 .form-content{
-    background-color: coral;
+    /* background-color: coral; */
     width: 100%;
     height: 40vh;
+    margin-right: 10rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
 }
 
-.submit-content{
-    background-color: hotpink;
-    width: 100%;
-    height: 30vh;
+.user-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 1rem 1rem black;
+}
+
+.submit-container{
+    padding-top: 3rem;
 }
 
 .h1-content{
@@ -57,6 +76,7 @@ body{
 
 .credits-content{
     align-self: flex-end;
+    justify-content: center;
 }
 
 .left-content-text{
@@ -65,13 +85,89 @@ body{
 
 .h1-content >.h1-content-text{
     color: white;
-    font-size: 2rem;
+    font-size: 5rem;
     display: flex;
     align-items: center;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .logo{
     height: 5rem;
     width: auto;
     float: left;
+    margin-right: 1.5rem;
+}
+
+.user-info-container, .user-contact-container, .user-password-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
+
+.credits-content>h1{
+    color: beige;
+}
+
+.caption-font{
+    font-family: 'Teko', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 5px 5px black;
+    -webkit-text-stroke: .1px black;
+}
+
+.label-caption{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.credits{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input{
+    font-size: 20px;
+    width: 30rem;
+    border-radius: 8px;
+    border: solid 1px black;
+    opacity: 50%;
+    transition: opacity 1s;
+}
+
+legend{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px black;
+}
+
+input:default{
+    border-color: black;
+}
+
+input:hover{
+    border-color: black;
+    opacity: 100%;
+}
+
+input:focus{
+    opacity: 100%;
+}
+
+input:valid{
+    border-color: green;
+    opacity: 100%;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+em{
+    color: red;
 }
