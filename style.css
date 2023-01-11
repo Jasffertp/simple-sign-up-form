@@ -75,8 +75,12 @@ body{
 }
 
 .credits-content{
+    width: 100%;
+    display: flex;
     align-self: flex-end;
-    justify-content: center;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding-right: 2rem;
 }
 
 .left-content-text{
@@ -107,8 +111,18 @@ body{
     gap: 10rem;
 }
 
-.credits-content>h1{
-    color: beige;
+.credits-content> .credits{
+    color: white;
+    font-size: 1rem;
+}
+
+.credits >a{
+    color: #DE3163;
+    transition: .5s color;
+}
+
+a:hover{
+    color: white;
 }
 
 .caption-font{
@@ -136,7 +150,7 @@ input{
     border: solid 1px black;
     border-color: black;
     opacity: 50%;
-    transition: opacity 1s;
+    transition-delay: 2s opacity 1s border-color;
 }
 
 legend{
@@ -158,6 +172,7 @@ input:hover{
 
 input:focus{
     opacity: 100%;
+    border-color: black;
 }
 
 input:valid{
@@ -166,12 +181,38 @@ input:valid{
     outline: 2px solid green;
 }
 
-input:invalid{
+/* input:invalid{
     opacity: 100%;
     border: none;
     outline: 2px solid red;
-}
+} */
 
 em{
     color: red;
+}
+
+.submit-container > button{
+    background-color: black;
+    color:yellow;
+    border: none;
+    font-family: 'Teko' sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 900;
+    /* -webkit-text-stroke: 1px white; */
+    text-transform: uppercase;
+    box-shadow: .5rem .5rem white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: .5s background-color;
+}
+
+.submit-container > button:hover{
+    background-color: white;
+    color: #DE3163;
+    box-shadow: .5rem .5rem black;
+}
+
+.submit-container> .credits{
+    margin-left: 1rem;
 }
